@@ -11,6 +11,7 @@ from langgraph.prebuilt import ToolNode, tools_condition
 
 @tool
 def calculator(query: str) -> str:
+    """A simple calculator tool. Input should be a mathematical expression."""
     return ast.literal_eval(query)
 
 
